@@ -1,0 +1,75 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+
+<div class="text-center">
+    <h1 class="display-4">Welcome!</h1>
+    <h3>Scroll through our various Pharma Machines:</h3>
+</div>
+
+
+<div class="container">
+    <h2 class="text-center" >Capsules</h2>
+   @*  <div class="row">
+        @foreach (var capsule in Model.capsules)
+        {
+           <div class="col-md-4">
+                
+            <div class="card mb-4 shadow-sm">
+                <div class="card-body">
+                <h3 class="card-title">@capsule.CapsuleName</h3>
+                <hr />
+
+                        <p class="card-text fw-bold">Details:</p>
+                        <p class="card-text">Output: @capsule.Output Capsules</p>
+                        <p class="card-text">Size: @capsule.CapsuleSize mm</p>
+                        <p class="card-text">Dimensions: @capsule.MachineDimension</p>
+                        <p class="card-text">Shipping Weight: @capsule.ShippingWeight Kilos</p>
+
+                </div>
+            </div>
+
+        </div>
+        } *@
+    </div>
+@* 
+    <h2>Tablets</h2>
+    <div class="row">
+        @foreach (var tablet in Model.Tablets)
+        {
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">@tablet.Name</h5>
+                        <p class="card-text">Model Number: @tablet.ModelNumber</p>
+                        <p class="card-text">Dies: @tablet.Dies</p>
+                        <p class="card-text">Max Pressure: @tablet.MaxPressure</p>
+                        <p class="card-text">Diameter: @tablet.MaxDiameter mm</p>
+                        <p class="card-text">Production Capacity: @tablet.ProductionCapacity</p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+    <h2>Liquid Filling Machines</h2>
+    <div class="row">
+        @foreach (var filling in Model.LiquidFillings)
+        {
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">@filling.Name</h5>
+                        <p class="card-text">Air Pressure: @filling.AirPressure</p>
+                        <p class="card-text">Air Volume: @filling.AirVolume</p>
+                        <p class="card-text">Filling Speed: @filling.FillingSpeed bottles/min</p>
+                        <p class="card-text">Filling Range: @filling.FillingRange ml</p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+ *@

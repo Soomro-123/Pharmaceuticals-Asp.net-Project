@@ -1,0 +1,32 @@
+﻿@model IEnumerable<Pharmaceuticals.Models.LiquidFillings>
+
+
+<h1 class="text-center">All the LiquidFilling Machines</h1>
+
+
+<div class="container text-center">
+    <div class="row">
+
+        @foreach (var produt in Model)
+        {
+            <div class="col-md-4">
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-body">
+                        <h3 class="card-title">@produt.ProductName</h3>
+                        <hr />
+
+                        <p class="card-text fw-bold">Details:</p>
+                        <p class="card-text"> AirPressure: @produt.AirPressure</p>
+                        <p class="card-text">AirVolume: @produt.AirVolume </p>
+                        <p class="card-text">FillingSpeed: @produt.FillingSpeed</p>
+                        <p class="card-text">FillingRange: @produt.FillingRange</p>
+
+                    </div>
+                </div>
+
+            </div>
+        }
+
+    </div>
+</div>

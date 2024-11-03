@@ -1,0 +1,33 @@
+﻿@model IEnumerable<Pharmaceuticals.Models.Capsules>
+
+
+<h1 class="text-center">All the Capsules Machines</h1>
+                <br />
+<br />
+
+<div class="container text-center">
+    <div class="row">
+
+            @foreach(var produt in Model)
+            {
+        <div class="col-md-4">
+                
+            <div class="card mb-4 shadow-sm">
+                <div class="card-body">
+                <h3 class="card-title">@produt.CapsuleName</h3>
+                <hr />
+
+                        <p class="card-text fw-bold">Details:</p>
+                        <p class="card-text">Output: @produt.Output Capsules</p>
+                        <p class="card-text">Size: @produt.CapsuleSize mm</p>
+                        <p class="card-text">Dimensions: @produt.MachineDimension</p>
+                        <p class="card-text">Shipping Weight: @produt.ShippingWeight Kilos</p>
+
+                </div>
+            </div>
+
+        </div>
+            }
+
+    </div>
+</div>
